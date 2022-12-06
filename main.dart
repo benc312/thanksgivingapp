@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
           secondary: Color(0x8B94A3),
         ),
       ),
-      home: const MyHomePage(title: 'Thanksgiving Food Eating'),
+      home: const MyHomePage(title: 'Thanksgiving'),
     );
   }
 }
@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               })),
       bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Colors.blue,
+        selectedItemColor: Colors.black,
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
         items: const <BottomNavigationBarItem>[
@@ -92,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Widget buildFoodCard(int index) {
     return Card(
-      color: Colors.white,
+      color: Colors.bluegrey,
       elevation: 2.0,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
       child: Padding(
